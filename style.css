@@ -36,6 +36,38 @@ a { color: inherit; }
   text-transform: uppercase;
 }
 
+.sticky-buy-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+.sticky-buy-info {
+  font-size: 0.95rem;
+  color: #1c1c1c;
+}
+.sticky-buy-price {
+  color: #c76b8a;
+  font-weight: 700;
+  margin-left: 0.3rem;
+}
+.sticky-buy-btn {
+  padding: 0.55rem 1.4rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+@media (max-width: 480px) {
+  .sticky-buy-info strong { display: block; font-size: 0.85rem; }
+  .sticky-buy-price { margin-left: 0; }
+}
+
 .hero {
   max-width: 1100px;
   margin: 0 auto;
